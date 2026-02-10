@@ -15,4 +15,4 @@ position = Vector2(1025, 564)
 arm_dir_marker = NodePath("../ArmDir")
 
 [node name="ArmDir" type="Marker2D" parent="." unique_id=1246769550]
-position = Vector2(1786, 1293)
+position = Vector2(1710, 1834)
