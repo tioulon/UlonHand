@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://xuhg2x2ph7jy"]
+
+[ext_resource type="PackedScene" uid="uid://blivt2a4ydlsu" path="res://Scenes/hand.tscn" id="1_52fb6"]
+
+[node name="MainScene" type="CanvasLayer" unique_id=1567315212]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=103132075]
+z_index = -45
+offset_right = 1976.0
+offset_bottom = 1110.0
+color = Color(0, 0, 1, 1)
+
+[node name="Hand" parent="." unique_id=1116769301 node_paths=PackedStringArray("arm_dir_marker") instance=ExtResource("1_52fb6")]
+position = Vector2(1025, 564)
+arm_dir_marker = NodePath("../ArmDir")
+
+[node name="ArmDir" type="Marker2D" parent="." unique_id=1246769550]
+position = Vector2(1786, 1293)

@@ -1,0 +1,340 @@
+[gd_scene format=3 uid="uid://blivt2a4ydlsu"]
+
+[ext_resource type="Script" uid="uid://c686g5p6otu5s" path="res://Scripts/hand.gd" id="1_u7o8q"]
+[ext_resource type="Texture2D" uid="uid://bn8rkyrcjbmmy" path="res://Sprites/shirt.png" id="2_mfd5k"]
+[ext_resource type="Texture2D" uid="uid://bnnd0wi7urms2" path="res://Sprites/shirt_back.png" id="3_3k3gc"]
+[ext_resource type="Texture2D" uid="uid://c28xby3d5ma0j" path="res://Sprites/back_fingers.png" id="3_qk01d"]
+[ext_resource type="Texture2D" uid="uid://cnihoq0f2k83n" path="res://Sprites/bottom_finger.png" id="4_mfd5k"]
+[ext_resource type="Texture2D" uid="uid://dry50fkmrs0me" path="res://Sprites/fingao.png" id="5_3k3gc"]
+[ext_resource type="Texture2D" uid="uid://c0rex0ixjsywo" path="res://Sprites/hand.png" id="6_qu0ba"]
+[ext_resource type="Texture2D" uid="uid://duc5mtqrcgqht" path="res://Sprites/pen.png" id="7_g6kbf"]
+[ext_resource type="Texture2D" uid="uid://cx21e45por1sv" path="res://Sprites/top_finger.png" id="8_3vevt"]
+[ext_resource type="Texture2D" uid="uid://ditjcm6ohdoyr" path="res://Sprites/bottom_aro.png" id="9_g6kbf"]
+[ext_resource type="Texture2D" uid="uid://q8dm502dg3q8" path="res://Sprites/fluffy.png" id="10_3vevt"]
+[ext_resource type="Texture2D" uid="uid://b0m4ka356ubp" path="res://Sprites/top_aro.png" id="11_a75hq"]
+
+[sub_resource type="Animation" id="Animation_u7o8q"]
+resource_name = "Offset"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteParent/pen_parent:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.33357662, -0.2938969]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpriteParent/hand_parent:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0049389973, -0.20691137]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SpriteParent/hand_parent:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(353.33087, -126.42115), Vector2(259.3254, -273.91248)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SpriteParent/hand_parent/fingers:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.2004956, -0.36435625]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SpriteParent/hand_parent/fingers:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-30.998476, -97.842384), Vector2(-33.619957, -108.08003)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SpriteParent/hand_parent/dedao_parent:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(76, 154), Vector2(76, 154)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("SpriteParent/hand_parent/dedao_parent:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0036534965, -0.027501792]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("SpriteParent/hand_parent/BackFingers:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.33912206]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("SpriteParent/hand_parent/BackFingers:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-75.31484, -27.88835), Vector2(-49.59288, -25.907913)]
+}
+
+[sub_resource type="Animation" id="Animation_vumah"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteParent/pen_parent:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpriteParent/hand_parent:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.06489299]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SpriteParent/hand_parent:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(272.29175, -244.7384)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SpriteParent/hand_parent/fingers:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.28311718]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SpriteParent/hand_parent/fingers:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-30.998476, -97.842384)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SpriteParent/hand_parent/dedao_parent:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(76, 154)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("SpriteParent/hand_parent/dedao_parent:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("SpriteParent/hand_parent/BackFingers:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("SpriteParent/hand_parent/BackFingers:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-49.59288, -25.907913)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jrln0"]
+_data = {
+&"Offset": SubResource("Animation_u7o8q"),
+&"RESET": SubResource("Animation_vumah")
+}
+
+[node name="Hand" type="Node2D" unique_id=1116769301 node_paths=PackedStringArray("animation", "arm", "sprite_parent", "bottom_aro", "top_aro", "fluffy")]
+process_mode = 3
+process_priority = 1
+script = ExtResource("1_u7o8q")
+animation = NodePath("AnimationPlayer")
+arm = NodePath("SpriteParent/hand_parent/Arm")
+sprite_parent = NodePath("SpriteParent")
+bottom_aro = NodePath("SpriteParent/pen_parent/BottomAro")
+top_aro = NodePath("SpriteParent/pen_parent/TopAro")
+fluffy = NodePath("SpriteParent/pen_parent/TopAro/Fluffy")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=179321132]
+libraries/ = SubResource("AnimationLibrary_jrln0")
+speed_scale = 0.0
+
+[node name="SpriteParent" type="Node2D" parent="." unique_id=1807427773]
+rotation = 0.12493968
+scale = Vector2(0.90096956, 0.90096956)
+
+[node name="hand_parent" type="Node2D" parent="SpriteParent" unique_id=627070178]
+position = Vector2(272.29175, -244.7384)
+rotation = -0.06489299
+
+[node name="Arm" type="Node2D" parent="SpriteParent/hand_parent" unique_id=1047775581]
+position = Vector2(219.0404, 177.73422)
+rotation = -0.12987867
+scale = Vector2(1.1099154, 1.1099154)
+
+[node name="Icon" type="Sprite2D" parent="SpriteParent/hand_parent/Arm" unique_id=453486321]
+z_index = 2
+position = Vector2(-1.8958042, -5.508644)
+rotation = 0.9985941
+texture = ExtResource("2_mfd5k")
+offset = Vector2(573.0416, 419.24768)
+
+[node name="Icon2" type="Sprite2D" parent="SpriteParent/hand_parent/Arm" unique_id=1546032876]
+position = Vector2(-1.8958042, -5.508644)
+rotation = 0.9985941
+texture = ExtResource("3_3k3gc")
+offset = Vector2(573.0416, 419.24768)
+
+[node name="Hand" type="Sprite2D" parent="SpriteParent/hand_parent" unique_id=1521790938]
+texture = ExtResource("6_qu0ba")
+
+[node name="BackFingers" type="Sprite2D" parent="SpriteParent/hand_parent" unique_id=544644291]
+position = Vector2(-49.59288, -25.907913)
+texture = ExtResource("3_qk01d")
+offset = Vector2(83.00702, 33.775257)
+
+[node name="fingers" type="Node2D" parent="SpriteParent/hand_parent" unique_id=1798530799]
+position = Vector2(-30.998476, -97.842384)
+rotation = -0.28311718
+
+[node name="TopFinger" type="Sprite2D" parent="SpriteParent/hand_parent/fingers" unique_id=930623766]
+position = Vector2(-1.4949226, 72.99198)
+texture = ExtResource("8_3vevt")
+
+[node name="BottomFinger" type="Sprite2D" parent="SpriteParent/hand_parent/fingers/TopFinger" unique_id=784420369]
+z_index = 1
+texture = ExtResource("4_mfd5k")
+
+[node name="dedao_parent" type="Node2D" parent="SpriteParent/hand_parent" unique_id=1407275473]
+z_index = 1
+position = Vector2(76, 154)
+
+[node name="Fingao" type="Sprite2D" parent="SpriteParent/hand_parent/dedao_parent" unique_id=1000014082]
+position = Vector2(-76, -154)
+texture = ExtResource("5_3k3gc")
+
+[node name="pen_parent" type="Node2D" parent="SpriteParent" unique_id=1905840030]
+
+[node name="BottomAro" type="Sprite2D" parent="SpriteParent/pen_parent" unique_id=1366249905]
+z_index = -2
+position = Vector2(569.4962, -533.5214)
+rotation = -0.12493969
+scale = Vector2(1.1099154, 1.1099154)
+texture = ExtResource("9_g6kbf")
+offset = Vector2(-237.5, 285.99997)
+
+[node name="TopAro" type="Sprite2D" parent="SpriteParent/pen_parent" unique_id=1999920960]
+z_index = 1
+position = Vector2(569.4962, -533.5214)
+rotation = -0.12493969
+scale = Vector2(1.1099154, 1.1099154)
+texture = ExtResource("11_a75hq")
+offset = Vector2(-237.5, 285.99997)
+
+[node name="Fluffy" type="Sprite2D" parent="SpriteParent/pen_parent/TopAro" unique_id=602756257]
+z_index = 2
+position = Vector2(33, 80)
+texture = ExtResource("10_3vevt")
+offset = Vector2(-276.5, 206)
+
+[node name="Pen" type="Sprite2D" parent="SpriteParent/pen_parent" unique_id=741136834]
+position = Vector2(337.00003, -249.00003)
+texture = ExtResource("7_g6kbf")
