@@ -16,6 +16,7 @@ var spdx : float = 0.0
 var spdx_fluffy : float = 0.0
 
 func _ready() -> void:
+	get_window().mouse_passthrough = true
 	animation.play("Offset")
 	pass # Replace with function body.
 
