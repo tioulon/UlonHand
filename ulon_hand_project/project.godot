@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Ulon Hand"
 run/main_scene="uid://xuhg2x2ph7jy"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [debug]
@@ -30,6 +30,19 @@ window/size/transparent=true
 window/subwindows/embed_subwindows=false
 window/stretch/mode="canvas_items"
 window/per_pixel_transparency/allowed=true
+window/vsync/vsync_mode=0
+
+[dotnet]
+
+project/assembly_name="Ulon Hand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/clickthrough/plugin.cfg")
+
+[input_devices]
+
+pointing/emulate_mouse_from_touch=false
 
 [physics]
 

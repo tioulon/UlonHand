@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://xuhg2x2ph7jy"]
 
 [ext_resource type="PackedScene" uid="uid://blivt2a4ydlsu" path="res://Scenes/hand.tscn" id="1_52fb6"]
+[ext_resource type="Script" uid="uid://ylkfj5lwteid" path="res://addons/clickthrough/nodes/clickthrough_gdscript/clickthrough_gdscript.gd" id="2_6l7je"]
+[ext_resource type="PackedScene" uid="uid://dgvbaum76wg1i" path="res://addons/clickthrough/detection/transparent/transparent_detector.tscn" id="3_jv6wh"]
 
 [node name="MainScene" type="CanvasLayer" unique_id=1567315212]
 
@@ -13,9 +15,17 @@ mouse_filter = 2
 mouse_behavior_recursive = 1
 color = Color(0, 0, 1, 1)
 
-[node name="Hand" parent="." unique_id=1116769301 node_paths=PackedStringArray("arm_dir_marker") instance=ExtResource("1_52fb6")]
+[node name="Hand" parent="." unique_id=1116769301 node_paths=PackedStringArray("arm_dir_marker", "clickthrough") instance=ExtResource("1_52fb6")]
 position = Vector2(1025, 564)
 arm_dir_marker = NodePath("../ArmDir")
+clickthrough = NodePath("../Clickthrough")
 
 [node name="ArmDir" type="Marker2D" parent="." unique_id=1246769550]
 position = Vector2(1710, 1834)
+
+[node name="Clickthrough" type="Node" parent="." unique_id=342288457]
+script = ExtResource("2_6l7je")
+window_mode = 3
+metadata/_custom_type_script = "uid://ylkfj5lwteid"
+
+[node name="TransparentDetector" parent="Clickthrough" unique_id=109426195 instance=ExtResource("3_jv6wh")]

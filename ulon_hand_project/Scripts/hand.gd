@@ -7,6 +7,7 @@ var last_mouse_pos : Vector2 = Vector2.ZERO
 @export var arm_dir_marker : Marker2D
 @export var arm: Node2D
 @export var sprite_parent: Node2D
+@export var clickthrough: Clickthrough
 
 @export var bottom_aro: Sprite2D
 @export var top_aro: Sprite2D
@@ -16,12 +17,22 @@ var spdx : float = 0.0
 var spdx_fluffy : float = 0.0
 
 func _ready() -> void:
-	get_window().mouse_passthrough = true
+	#get_window().mode = Window.MODE_WINDOWED
+	#get_window().borderless = true
+	#get_window().always_on_top = true
+	#get_window().size = DisplayServer.screen_get_size()
+	#get_window().position = Vector2i.ZERO
+	#get_window().mouse_passthroumeout
+	#clickthrough.set_clickability(true)gh = true
+	Input.use_accumulated_input = false
+	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 	animation.play("Offset")
+	#await get_tree().create_timer(1).ti
 	pass # Replace with function body.
 
 
 func _process(_delta: float) -> void:
+	
 	set_position_to_cursor()
 	var mouse_event : Vector2 = get_global_mouse_position() - last_mouse_pos
 	animation_seek = lerp(animation_seek, clamp(animation.current_animation_position + (mouse_event.x + mouse_event.y)*.05, 0.1, .99), .1)
@@ -42,7 +53,10 @@ func _process(_delta: float) -> void:
 	pass
 
 #--------------------------------
-
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		global_position = event.global_position
+	pass
 
 func set_position_to_cursor() -> void:
 	global_position = get_global_mouse_position()
